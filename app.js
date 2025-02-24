@@ -61,3 +61,16 @@ choices.forEach((choice) => {
     playGame(userChoice);
   });
 });
+
+// Add this after your existing JavaScript logic
+
+document.getElementById('new-game-btn').addEventListener('click', function() {
+  
+  document.getElementById('user-score').textContent = '0';
+  document.getElementById('comp-score').textContent = '0';
+
+  
+  document.getElementById('msg').textContent = 'Play your move';
+
+  
+});
